@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/mycss.css">
+    <script type="text/javascript" src="js/toDoList-final.js"></script>
+    <title>Work Center</title>
+  </head>
+  <body>
+  
+
+  <h2>To Do List</h2>
+
+  Instructions:
+  <ul>
+    <li>Enter your action item in the field below and click "Add List Item"</li>
+    <li>Select &#x25B2 to move item up the list and &#x25BC to move item down the list.</li>
+    <li>Select &#9003 to delete item.</li>
+    <li>Click "Save Changes" button below to save your updated list.</li>
+  </ul>
+    
+  <input size="40" placeholder="Enter your action item here" name="listItem" id="listItem" type="text">
+  <button type="button" id="addToDo" name="addToDo">Add List Item</button><br>
+  
+  <div><ol id="addNewItemHere">
+
+  </ol></div>
+  
+  <button type="button" id="saveButton" name="saveButton">Save Changes</button><br>
+
+
+  <h2>Decision Maker</h2>
+  <h3>If you can't decide what to do next, let the Magic 8 Ball help...</h3>
+    <form autocomplete="off" action="" name="form8Ball">
+      <fieldset name="decisionFieldSet">
+        <img src="img/8ball.jpg" /><br>
+        <input size ="40" placeholder="Enter your question here" name="question" id="question" type="text" required>
+        <button type="button" id="button8Ball" name="button8Ball">Ask the Great 8 Ball Oracle Now!</button><br>
+        <h4><div id="answer"></div></h4>
+      <legend>The Great 8 Ball Oracle</legend></fieldset>
+    </form>
+  
+    <script type="text/javascript" src="js/8ball2.js"></script>
+  </body>
+
+</html>
